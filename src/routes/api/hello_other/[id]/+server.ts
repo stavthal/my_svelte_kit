@@ -3,5 +3,6 @@ interface RequestParams {
 }
 
 export async function GET({ params }: { params: RequestParams }) {
-	return new Response(`Hello, ${params.id}!`, { status: 200 });
+	await new Promise((resolve, reject) => setTimeout(resolve, 3000));
+	return new Response(JSON.stringify({ message: `Hello, ${params.id}!` }), { status: 200 });
 }
