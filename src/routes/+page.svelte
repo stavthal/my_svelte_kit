@@ -19,6 +19,7 @@
 
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<a href="/demo/paraglide">Go to Paraglide Demo</a>
 
 <div class="flex flex-col gap-2 p-4">
 	<h1 class="text-3xl text-green-500">
