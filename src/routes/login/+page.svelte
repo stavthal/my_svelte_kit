@@ -1,11 +1,13 @@
 <script lang="ts">
+	import { enhance } from '$app/forms';
 	import type { PageData, ActionData } from './$types';
 
 	let { data, form }: { data: PageData; form: ActionData } = $props();
 </script>
 
-<form method="POST" action="?/login">
+<form method="POST" action="?/login" use:enhance>
 	{#if form?.success === false && form.message}<p class="error">{form?.message}</p>{/if}
+	{#if form?.success === true}<p class="success">Login successful!</p>{/if}
 	<div class="flex w-96 flex-col gap-2 p-4">
 		<label for="email"> Email: </label>
 		<input id="email" type="email" name="email" value={form?.email ?? ''} required />
