@@ -38,6 +38,9 @@
 			<button class="rounded-2xl bg-blue-400 px-2 text-white" onclick={onClick}>
 				Go to Home
 			</button>
+			<button class="rounded-2xl bg-green-400 px-2 text-white" onclick={() => goto('/login')}>
+				Go to Login
+			</button>
 		</div>
 
 		{@render children?.()}
