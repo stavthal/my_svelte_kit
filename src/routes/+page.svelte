@@ -32,3 +32,7 @@
 		>Navigate to hello world page</button
 	>
 </div>
+
+{#if true}
+	<p class="text-green-500">Hello world!</p>
+{/if}
